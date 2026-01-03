@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"key":{"cf":{"$numberInt":"1"}},"name":"cf_1","unique":true},{"v":{"$numberInt":"2"},"key":{"matricola":{"$numberInt":"1"}},"name":"matricola_1","unique":true}],"uuid":"e0f83d7aec354a76bfa3e84e645f9165","collectionName":"studenti","type":"collection"}

@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f4fdf7;
+  color: #1c2833;
+}
+
+/* ===============================
+   SEZIONE INVIO RECENSIONE
+================================ */
+
+.recensione-section {
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: 120px auto 60px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  text-align: center;
+}
+
+.recensione-section h2 {
+  color: #038cfd;
+  margin-bottom: 15px;
+}
+
+.recensione-section p {
+  color: #2e4053;
+  margin-bottom: 25px;
+}
+
+#reviewText {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  border: 1px solid #b5d5b0;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: none;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#reviewText:focus {
+  border-color: #27ae60;
+  box-shadow: 0 0 4px rgba(39, 174, 96, 0.4);
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  background-color: #27ae60;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1e8449;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+/* ===============================
+   SEZIONE VISUALIZZAZIONE RECENSIONI
+================================ */
+
+.recensioni-view-section {
+  background-color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto 80px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  text-align: center;
+}
+
+.recensioni-view-section h2 {
+  color: #038cfd;
+  margin-bottom: 30px;
+}
+
+.recensioni-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recensione-card {
+  background-color: #f9fdfb;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.recensione-card .voto {
+  color: #f1c40f;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.recensione-card .commento {
+  color: #2e4053;
+  margin-bottom: 8px;
+}
+
+.recensione-card .data {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+  .recensione-section,
+  .recensioni-view-section {
+    width: 90%;
+    padding: 25px;
+  }
+}

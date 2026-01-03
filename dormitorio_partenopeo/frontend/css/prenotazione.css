@@ -1,0 +1,125 @@
+/* Reset e base */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #f4fdf7;
+    color: #1c2833;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Barra titolo principale ===== */
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: #038cfd; /* blu titoli */
+    margin: 0;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    color: #1c2833;
+    margin-top: 10px;
+}
+
+/* ===== Form prenotazione ===== */
+.booking-form-section {
+    min-height: calc(100vh - 200px); /* altezza totale meno hero */
+    display: flex;
+    justify-content: center; /* centro orizzontale */
+    align-items: center;     /* centro verticale */
+    padding: 20px;
+}
+
+.reservation-form {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reservation-form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.reservation-form label {
+    font-weight: 500;
+    color: #145a32;
+}
+
+.reservation-form input,
+.reservation-form select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #b5d5b0;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reservation-form input:focus,
+.reservation-form select:focus {
+    border-color: #27ae60;
+    box-shadow: 0 0 4px rgba(39, 174, 96, 0.4);
+}
+
+/* Pulsante prenota */
+.reservation-form button {
+    background-color: #27ae60;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.reservation-form button:hover {
+    background-color: #1e8449;
+    transform: translateY(-2px);
+}
+
+/* ===== Sezione info camera selezionata ===== */
+.selected-room {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.selected-room h2 {
+    color: #038cfd;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.selected-room p {
+    font-size: 1rem;
+    color: #2e4053;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 150px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .reservation-form {
+        padding: 20px;
+    }
+}

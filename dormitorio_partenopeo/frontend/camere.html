@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camere - Dormitorio partenopeo</title>
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/camere.css">
+  <link rel="icon" href="immagini/logo.png">
+</head>
+<body>
+
+  <!-- Menu laterale -->
+  <div class="menu-toggle" onclick="toggleMenu()"></div>
+  <nav id="sideMenu" class="side-menu">
+    <ul>
+      <li><a href="index.html">&#127968 Home</a></li>
+      <li><a href="dashboard.html">&#128202 Dashboard</a></li>
+      <li><a href="camere.html">&#128719 Camere</a></li>
+      <li><a href="promozioni.html">&#127873 Promozioni</a></li>
+      <li><a href="contatti.html">&#128222 Contatti</a></li>
+      <li><a href="recensioni.html">&#11088 Recensioni</a></li>
+    </ul>
+  </nav>
+
+  <!-- Pulsante login/logout -->
+  <div class="login-button">
+    <a id="auth-link" href="login.html">&#128100 Accedi</a>
+  </div>
+
+  <!-- Sezione Camere -->
+  <section class="camere-section">
+    <h1>Le nostre camere</h1>
+    <p>
+      Scopri le soluzioni disponibili nel Dormitorio Partenopeo
+      e prenota subito la tua stanza.
+    </p>
+
+    <div class="tabella-container">
+      <table class="tabella-camere">
+
+        <tr>
+          <!-- Singola -->
+          <td>
+            <img src="immagini/singola.jpg" alt="Camera singola">
+            <h2>Camera Singola</h2>
+            <p>Letto singolo, scrivania e bagno privato.</p>
+            <span class="prezzo" id="prezzo-singola">—</span>
+            <button class="btn-prenota" onclick="prenota('singola')">
+              Prenota ora
+            </button>
+          </td>
+
+          <!-- Doppia -->
+          <td>
+            <img src="immagini/doppia.jpg" alt="Camera doppia">
+            <h2>Camera Doppia</h2>
+            <p>Due letti singoli, doppia scrivania e bagno condiviso.</p>
+            <span class="prezzo" id="prezzo-doppia">—</span>
+            <button class="btn-prenota" onclick="prenota('doppia')">
+              Prenota ora
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <!-- Tripla -->
+          <td>
+            <img src="immagini/tripla.jpg" alt="Camera tripla">
+            <h2>Camera Tripla</h2>
+            <p>Ampio spazio, tre letti e bagno privato.</p>
+            <span class="prezzo" id="prezzo-tripla">—</span>
+            <button class="btn-prenota" onclick="prenota('tripla')">
+              Prenota ora
+            </button>
+          </td>
+
+          <!-- Quadrupla -->
+          <td>
+            <img src="immagini/quadrupla.jpg" alt="Camera quadrupla">
+            <h2>Camera Quadrupla</h2>
+            <p>Quattro letti singoli e armadi spaziosi.</p>
+            <span class="prezzo" id="prezzo-quadrupla">—</span>
+            <button class="btn-prenota" onclick="prenota('quadrupla')">
+              Prenota ora
+            </button>
+          </td>
+        </tr>
+
+      </table>
+    </div>
+  </section>
+
+  <script src="js/menu.js"></script>
+  <script src="js/auth-studente.js"></script>
+  <script src="js/camere.js"></script>
+</body>
+</html>

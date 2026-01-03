@@ -1,0 +1,161 @@
+/* ===== Reset & Base ===== */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f4fdf7;
+  color: #1c2833;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+  position: relative;
+  background: url('../immagini/pagamento-bg.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay h1 {
+  font-size: 2.5rem;
+  color: #038cfd; /* blu coerente */
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-overlay p {
+  font-size: 1.1rem;
+  color: black;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Riepilogo ===== */
+#riepilogo-section {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.riepilogo-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 30px 40px;
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid #c8e6c9;
+  text-align: left;
+}
+
+.riepilogo-container h2 {
+  color: #038cfd;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.riepilogo-dettagli p {
+  font-size: 1rem;
+  color: #2e4053;
+  margin-bottom: 10px;
+}
+
+/* ===== Sezione Pagamento ===== */
+#pagamento-section {
+  padding: 30px 20px 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.payment-form {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 30px 40px;
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid #c8e6c9;
+}
+
+.payment-form h2 {
+  color: #038cfd;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.payment-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #145a32;
+}
+
+.payment-form input {
+  width: 100%;
+  border: 1px solid #b5d5b0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  margin-top: 5px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.payment-form input:focus {
+  border-color: #27ae60;
+  box-shadow: 0 0 4px rgba(39, 174, 96, 0.4);
+  outline: none;
+}
+
+/* Campi scadenza e CVV */
+.scadenza-cvv {
+  display: flex;
+  gap: 20px;
+}
+
+.scadenza-cvv div {
+  flex: 1;
+}
+
+/* ===== Bottone ===== */
+.payment-form button {
+  margin-top: 30px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+.payment-form button:hover {
+  background-color: #1e8449;
+  transform: translateY(-2px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .payment-form,
+  .riepilogo-container {
+    padding: 25px;
+  }
+
+  .scadenza-cvv {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prenotazione - Dormitorio Partenopeo</title>
+  <link rel="stylesheet" href="css/prenotazione.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="icon" href="immagini/logo.png">
+  <script defer src="prenotazione.js"></script>
+</head>
+<body>
+
+  <!-- 🔹 Menù laterale -->
+  <div class="menu-toggle" onclick="toggleMenu()"></div>
+  <nav id="sideMenu" class="side-menu">
+    <ul>
+      <li><a href="index.html">&#127968 Home</a></li>
+      <li><a href="dashboard.html">&#128202 Dashboard</a></li>
+      <li><a href="camere.html">&#128719 Camere</a></li>
+      <li><a href="promozioni.html">&#127873 Promozioni</a></li>
+      <li><a href="contatti.html">&#128222 Contatti</a></li>
+      <li><a href="recensioni.html">&#11088 Recensioni</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero con barra verde menta e titolo blu -->
+  <section class="hero-section">
+    <div class="hero-overlay">
+      <h1>Prenota la tua camera</h1>
+      <p>Completa i dettagli per confermare la tua prenotazione</p>
+    </div>
+  </section>
+
+  <!-- Form di prenotazione centrato -->
+  <section class="booking-form-section">
+    <form class="reservation-form">
+      <h2>Dati della prenotazione</h2>
+
+      <label for="camera">Tipo di camera</label>
+      <select id="camera" name="camera" required>
+        <option value="singola">Singola</option>
+        <option value="doppia">Doppia</option>
+        <option value="tripla">Tripla</option>
+        <option value="quadrupla">Quadrupla</option>
+      </select>
+
+      <label for="checkin">Check-in</label>
+      <input type="date" id="checkin" name="checkin" required>
+
+      <label for="checkout">Check-out</label>
+      <input type="date" id="checkout" name="checkout" required>
+
+      <button type="submit" class="btn-confirm">Prenota</button>
+    </form>
+  </section>
+
+  <script src="js/menu.js"></script>
+  <script src="js/prenotazione.js"></script>
+</body>
+</html>

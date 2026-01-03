@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promozioni - Dormitorio Partenopeo</title>
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/promozioni.css">
+  <link rel="icon" href="immagini/logo.png">
+</head>
+<body>
+
+  <!-- Menu hamburger e laterale -->
+  <div class="menu-toggle" onclick="toggleMenu()"></div>
+    <nav id="sideMenu" class="side-menu">
+        <ul>
+            <li><a href="index.html">&#127968 Home</a></li>
+            <li><a href="dashboard.html">&#128202 Dashboard</a></li>
+            <li><a href="camere.html">&#128719 Camere</a></li>
+            <li><a href="promozioni.html">&#127873 Promozioni</a></li>
+            <li><a href="contatti.html">&#128222 Contatti</a></li>
+            <li><a href="recensioni.html">&#11088 Recensioni</a></li>
+        </ul>
+    </nav>
+
+  <div class="login-button">
+    <a id="auth-link" href="login.html">&#128100 Accedi</a>
+  </div>
+
+  <!-- Contenitore promozioni -->
+  <div class="promo-container">
+    <h1>Promozioni</h1>
+    <p>Scopri le nostre promozioni per il tuo soggiorno nel nostro dormitorio.</p>
+
+    <!-- PROMO DINAMICA -->
+    <div class="promo-grid" id="promo-grid"></div>
+  </div>
+
+  <script src="js/menu.js"></script>
+  <script src="js/auth-studente.js"></script>
+  <script src="js/promozioni.js"></script>
+</body>
+</html>

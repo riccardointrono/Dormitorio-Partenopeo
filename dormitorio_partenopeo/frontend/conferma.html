@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conferma prenotazione</title>
+  <link rel="icon" href="immagini/logo.png">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/conferma.css">
+</head>
+<body>
+
+  <div class="menu-toggle" onclick="toggleMenu()"></div>
+  <nav id="sideMenu" class="side-menu">
+    <ul>
+      <li><a href="index.html">&#127968 Home</a></li>
+            <li><a href="dashboard.html">&#128202 Dashboard</a></li>
+            <li><a href="camere.html">&#128719 Camere</a></li>
+            <li><a href="promozioni.html">&#127873 Promozioni</a></li>
+            <li><a href="contatti.html">&#128222 Contatti</a></li>
+            <li><a href="recensioni.html">&#11088 Recensioni</a></li>
+    </ul>
+  </nav>
+
+  <section class="conferma-section">
+    <div class="conferma-box">
+      <h1>✅ Prenotazione completata!</h1>
+      <p>Grazie per aver scelto il <strong>Dormitorio partenopeo</strong>.</p>
+
+      <div class="riepilogo">
+        <h3>📄 Riepilogo prenotazione</h3>
+        <p><strong>Camera:</strong> <span id="camera">—</span></p>
+        <p><strong>Check-in:</strong> <span id="checkin">—</span></p>
+        <p><strong>Check-out:</strong> <span id="checkout">—</span></p>
+        <p><strong>Totale:</strong> € <span id="totale">—</span></p>
+      </div>
+
+      <button onclick="window.location.href='index.html'">
+        Torna alla Home
+      </button>
+    </div>
+  </section>
+
+  <script src="js/menu.js"></script>
+  <script src="js/conferma.js"></script>
+</body>
+</html>

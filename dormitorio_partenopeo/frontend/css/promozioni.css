@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f4fdf7;
+  color: #1c2833;
+}
+
+/* Contenitore principale */
+.promo-container {
+  max-width: 900px;
+  margin: 80px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.promo-container h1 {
+  font-size: 2rem;
+  color: #038cfd;
+  margin-bottom: 10px;
+}
+
+.promo-container p {
+  font-size: 1rem;
+  color: #2e4053;
+  margin-bottom: 40px;
+}
+
+/* Contenitore promozione singola */
+.promo-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.promo-card {
+  background-color: #27ae60;
+  color: white;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}

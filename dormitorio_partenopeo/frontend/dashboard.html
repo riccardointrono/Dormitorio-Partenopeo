@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Utente</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="icon" href="immagini/logo.png">
+</head>
+<body>
+
+    <!-- Menù laterale -->
+    <div class="menu-toggle" onclick="toggleMenu()"></div>
+    <nav id="sideMenu" class="side-menu">
+        <ul>
+            <li><a href="index.html">&#127968 Home</a></li>
+            <li><a href="dashboard.html">&#128202 Dashboard</a></li>
+            <li><a href="camere.html">&#128719 Camere</a></li>
+            <li><a href="promozioni.html">&#127873 Promozioni</a></li>
+            <li><a href="contatti.html">&#128222 Contatti</a></li>
+            <li><a href="recensioni.html">&#11088 Recensioni</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenuto principale -->
+    <div class="main-container">
+
+        <div class="navbar">
+            <h2>Area Utente</h2>
+            <button id="logout-btn">Logout</button>
+        </div>
+
+        <div class="container">
+            <h1>Benvenuto <span id="nome-benvenuto"></span></h1>
+
+            <section class="card">
+                <h2>Dati Personali</h2>
+                <p><strong>Nome:</strong> <span id="nome"></span></p>
+                <p><strong>Cognome:</strong> <span id="cognome"></span></p>
+                <p><strong>Matricola:</strong> <span id="matricola"></span></p>
+            </section>
+
+            <section class="card">
+                <h2>Le tue Prenotazioni</h2>
+                <div id="prenotazioni-list"></div>
+            </section>
+        </div>
+    </div>
+    <script src="js/menu.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

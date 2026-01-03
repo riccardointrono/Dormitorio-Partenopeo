@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recensioni - Dormitorio Partenopeo</title>
+    <link rel="icon" href="immagini/logo.png">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/recensioni.css">
+</head>
+<body>
+  <!-- Menù -->
+  <div class="menu-toggle" onclick="toggleMenu()"></div>
+    <nav id="sideMenu" class="side-menu">
+        <ul>
+            <li><a href="index.html">&#127968 Home</a></li>
+            <li><a href="dashboard.html">&#128202 Dashboard</a></li>
+            <li><a href="camere.html">&#128719 Camere</a></li>
+            <li><a href="promozioni.html">&#127873 Promozioni</a></li>
+            <li><a href="contatti.html">&#128222 Contatti</a></li>
+            <li><a href="recensioni.html">&#11088 Recensioni</a></li>
+        </ul>
+    </nav>
+
+    <div class="login-button">
+        <a id="auth-link" href="login.html">&#128100 Accedi</a>
+    </div>
+
+  <!-- SEZIONE INVIO RECENSIONE -->
+    <section class="recensione-section">
+        <h2>Lascia una recensione</h2>
+        <p>Raccontaci la tua esperienza nel dormitorio!</p>
+
+        <form id="reviewForm">
+            <textarea id="reviewText" placeholder="Scrivi la tua recensione qui..." required></textarea>
+            <button type="submit">Invia recensione</button>
+        </form>
+    </section>
+
+    <!-- SEZIONE VISUALIZZA RECENSIONI -->
+    <section class="recensioni-view-section">
+        <h2>Recensioni degli studenti</h2>
+
+        <div class="recensioni-list" id="recensioni-list">
+            <!-- recensioni caricate via JS -->
+        </div>
+    </section>
+
+  <script src="js/menu.js"></script>
+  <script src="js/auth-studente.js"></script>
+  <script src="js/recensioni.js"></script>
+</body>
+</html>

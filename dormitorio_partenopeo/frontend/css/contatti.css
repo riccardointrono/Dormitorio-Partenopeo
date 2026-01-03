@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f4fdf7;
+  color: #1c2833;
+}
+
+/* ===== Sezione contatti ===== */
+.contatti-section {
+  text-align: center;
+  padding: 100px 20px 50px;
+}
+
+.contatti-section h1 {
+  font-size: 2.5rem;
+  color: #038cfd;
+  margin-bottom: 10px;
+}
+
+.contatti-section p {
+  font-size: 1.1rem;
+  color: #2e4053;
+  margin-bottom: 40px;
+}
+
+.info-contatti {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contatto-box {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  width: 250px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contatto-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.contatto-box h3 {
+  color: #1e8449;
+  margin-bottom: 10px;
+}
+
+.contatto-box a {
+  color: #038cfd;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contatto-box a:hover {
+  color: #0263b8;
+  text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .info-contatti {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contatto-box {
+    width: 80%;
+  }
+}

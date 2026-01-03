@@ -1,0 +1,142 @@
+/* RESET BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f4fdf7;
+  color: #1c2833;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #038cfd;
+  color: white;
+  height: 85px;                 /* 🔥 aumenta altezza */
+  display: flex;
+  justify-content: center;       /* 🔥 centro titolo */
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
+  position: relative;            /* necessario per posizionare il logout */
+}
+
+.navbar h2 {
+  font-size: 1.9rem;             /* 🔥 più grande */
+  font-weight: 600;
+}
+
+/* BOTTONE LOGOUT */
+#logout-btn {
+  position: absolute;
+  right: 20px;                   /* 🔥 resta fisso a destra */
+  background-color: #1e8449;
+  color: white;
+  border: none;
+  padding: 10px 20px;            /* 🔥 leggermente più grande */
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#logout-btn:hover {
+  background-color: #145a32;
+  transform: translateY(-2px);
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.container h1 {
+  font-size: 2rem;
+  color: #038cfd;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* ===== CARD GENERICA ===== */
+.card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  color: #1e8449;
+  margin-bottom: 15px;
+}
+
+/* ===== LISTE PRENOTAZIONI E PAGAMENTI ===== */
+#prenotazioni-list, #pagamenti-list {
+  padding: 10px 0;
+}
+
+.item-box {
+  background: #f8fdfb;
+  padding: 15px;
+  border: 1px solid #b5d5b0;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.item-box p {
+  margin-bottom: 5px;
+  color: #2e4053;
+  font-size: 0.95rem;
+}
+
+.btn-annulla {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-annulla:hover {
+    background-color: #27ae60;
+}
+
+.non-annullabile {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .navbar {
+    height: 70px;
+  }
+
+  .navbar h2 {
+    font-size: 1.5rem;
+  }
+
+  #logout-btn {
+    padding: 7px 14px;
+  }
+}

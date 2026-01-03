@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrazione - Dormitorio partenopeo</title>
+  <link rel="icon" href="immagini/logo.png">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/registrati.css">
+</head>
+<body>
+
+  <!-- Menu -->
+  <div class="menu-toggle" onclick="toggleMenu()"></div>
+  <nav id="sideMenu" class="side-menu">
+    <ul>
+      <li><a href="index.html">&#127968 Home</a></li>
+      <li><a href="dashboard.html">&#128202 Dashboard</a></li>
+      <li><a href="camere.html">&#128719 Camere</a></li>
+      <li><a href="promozioni.html">&#127873 Promozioni</a></li>
+      <li><a href="contatti.html">&#128222 Contatti</a></li>
+      <li><a href="recensioni.html">&#11088 Recensioni</a></li>
+    </ul>
+  </nav>
+
+  <!-- Registrazione -->
+  <div class="register-container">
+    <h1>Crea un nuovo account</h1>
+
+    <form id="registerForm">
+      <input type="text" id="nome" placeholder="Nome" required>
+      <input type="text" id="cognome" placeholder="Cognome" required>
+      <input type="text" id="cf" placeholder="Codice Fiscale (16 caratteri)" maxlength="16" required>
+      <input type="text" id="matricola" placeholder="Matricola (10 cifre)" maxlength="10" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="password" id="confermaPassword" placeholder="Conferma Password" required>
+      <button type="submit">Registrati</button>
+    </form>
+
+
+    <p class="login-link">
+      Hai già un account?
+      <a href="login.html">Accedi</a>
+    </p>
+  </div>
+
+  <script src="js/menu.js"></script>
+  <script src="js/registrati.js"></script>
+</body>
+</html>

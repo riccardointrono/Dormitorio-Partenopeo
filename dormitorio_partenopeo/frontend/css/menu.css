@@ -1,0 +1,116 @@
+/* Bottone hamburger / X */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1100;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+/* icona hamburger */
+.menu-toggle::before {
+    content: "\2630"; /* ☰ */
+    font-size: 2rem;
+    line-height: 1;
+    color: #ffffff;
+}
+
+/* quando aperto mostra solo la X */
+.menu-toggle.open::before {
+    content: "✕";
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+/* Hover: scurisce leggermente */
+.menu-toggle:hover::before {
+    filter: brightness(0.8);
+    transition: filter 0.2s ease;
+}
+
+/* Menù laterale */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* nascosto di default */
+    width: 250px;
+    height: 500px; /* 60% dell’altezza dello schermo */
+    background-color: rgba(39, 174, 96, 0.95); /* verde traslucido */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding-top: 80px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    overflow-y: auto; /* se serve scorrere */
+}
+
+.side-menu.open {
+    left: 0; /* visibile */
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu li {
+    margin: 25px 0;
+}
+
+.side-menu a {
+    color: #c3f3d0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding-left: 30px;
+    display: block;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.side-menu a:hover {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+    transform: translateX(6px);
+}
+
+.login-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1100;
+}
+
+.login-button a {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* spazio tra emoji e testo */
+    background: rgba(0, 0, 0, 0.25); /* stesso colore dell’hamburger */
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover: scurisce un po’, come l’hamburger */
+.login-button a:hover {
+    background: rgba(0, 0, 0, 0.35);
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    transform: translateY(-2px);
+}

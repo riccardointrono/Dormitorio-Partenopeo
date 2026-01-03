@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento - Dormitorio Partenopeo</title>
+  <link rel="stylesheet" href="css/pagamento.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="icon" href="immagini/logo.png">
+  <script defer src="js/pagamento.js"></script>
+</head>
+<body>
+
+  <!-- Menù laterale -->
+  <div class="menu-toggle" onclick="toggleMenu()"></div>
+  <nav id="sideMenu" class="side-menu">
+    <ul>
+      <li><a href="index.html">&#127968 Home</a></li>
+      <li><a href="dashboard.html">&#128202 Dashboard</a></li>
+      <li><a href="camere.html">&#128719 Camere</a></li>
+      <li><a href="promozioni.html">&#127873 Promozioni</a></li>
+      <li><a href="contatti.html">&#128222 Contatti</a></li>
+      <li><a href="recensioni.html">&#11088 Recensioni</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-section">
+    <div class="hero-overlay">
+      <h1>Pagamento Prenotazione</h1>
+      <p>Riepilogo e completamento pagamento</p>
+    </div>
+  </section>
+
+  <!-- Sezione riepilogo -->
+  <section id="riepilogo-section">
+    <div class="riepilogo-container">
+      <h2>Riepilogo della tua prenotazione</h2>
+      <div class="riepilogo-dettagli">
+        <p><strong>Camera:</strong> <span id="riepilogo-camera"></span></p>
+        <p><strong>Check-in:</strong> <span id="riepilogo-checkin"></span></p>
+        <p><strong>Check-out:</strong> <span id="riepilogo-checkout"></span></p>
+        <p><strong>Totale:</strong> <span id="riepilogo-totale"></span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione pagamento -->
+  <section id="pagamento-section">
+    <form class="payment-form">
+      <h2>Dati di pagamento</h2>
+
+      <label for="titolare">Nome intestatario carta</label>
+      <input
+        type="text"
+        id="titolare"
+        required
+        minlength="3"
+        placeholder="Nome e Cognome"
+      >
+
+      <label for="numeroCarta">Numero carta</label>
+      <input
+        type="text"
+        id="numeroCarta"
+        required
+        maxlength="16"
+        pattern="[0-9]{16}"
+        placeholder="1234567812345678"
+      >
+
+      <div class="scadenza-cvv">
+        <div>
+          <label for="scadenza">Scadenza</label>
+          <input
+            type="month"
+            id="scadenza"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="cvv">CVV</label>
+          <input
+            type="text"
+            id="cvv"
+            required
+            maxlength="3"
+            pattern="[0-9]{3}"
+            placeholder="123"
+          >
+        </div>
+      </div>
+
+      <button type="submit">Conferma Pagamento</button>
+    </form>
+  </section>
+
+  <script src="js/menu.js"></script>
+  <script src="js/pagamento.js"></script>
+</body>
+</html>

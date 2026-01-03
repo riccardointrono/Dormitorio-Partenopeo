@@ -1,0 +1,117 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f4fdf7;
+  color: #1c2833;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Sezione Camere ===== */
+.camere-section {
+  text-align: center;
+  margin-top: 100px;
+  padding: 0 20px;
+}
+
+.camere-section h1 {
+  font-size: 2.5rem;
+  color: #038cfd;
+  margin-bottom: 10px;
+}
+
+.camere-section p {
+  color: #2e4053;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+/* ===== Tabella ===== */
+.tabella-container {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.tabella-camere {
+  border-collapse: separate;
+  border-spacing: 30px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.tabella-camere td {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  vertical-align: top;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tabella-camere td:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.tabella-camere img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.tabella-camere h2 {
+  color: #1e8449;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.tabella-camere p {
+  color: #2e4053;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.prezzo {
+  display: block;
+  font-weight: bold;
+  color: #038cfd;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* ===== Bottone Prenota ===== */
+.btn-prenota {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-prenota:hover {
+  background-color: #1e8449;
+  transform: translateY(-2px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .tabella-camere {
+    border-spacing: 20px;
+  }
+
+  .tabella-camere tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tabella-camere td {
+    width: 100%;
+  }
+}

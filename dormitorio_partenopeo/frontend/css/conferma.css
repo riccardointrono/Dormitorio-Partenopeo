@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f4fdf7;
+  color: #1c2833;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.conferma-section {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.conferma-box {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.conferma-box h1 {
+  color: #27ae60;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.conferma-box p {
+  color: #2e4053;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.riepilogo {
+  margin-top: 25px;
+  text-align: left;
+  border-top: 1px solid #d9e8dc;
+  padding-top: 15px;
+}
+
+.riepilogo h3 {
+  color: #038cfd;
+  margin-bottom: 10px;
+}
+
+.riepilogo p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+button {
+  margin-top: 25px;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #1e8449;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .conferma-box {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .conferma-box h1 {
+    font-size: 1.7rem;
+  }
+
+  .conferma-box p {
+    font-size: 1rem;
+  }
+}
