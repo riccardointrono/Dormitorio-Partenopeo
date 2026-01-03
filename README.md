@@ -100,10 +100,21 @@ Explanation of parameters:
 
 ---
 
+## Test User Credentials
+
+The following fictitious user is already registered in the database and can be used to test all the main functionalities of the application (login, bookings, reviews, promotions):
+
+```text
+Student ID (Matricola): 2024000001
+Password: rossi123
+```
+
+These credentials are provided **only for project evaluation purposes**.
+
+---
+
 ## Notes
 
 - All data contained in the database is **fictitious** and used only for project evaluation.
 - The project can be fully tested without accessing MongoDB Atlas directly.
 - The local database option is provided as a backup and for additional verification.
-
-
